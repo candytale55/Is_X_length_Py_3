@@ -1,0 +1,16 @@
+# Function x_length_words takes a string named _sentence_ and an integer named _x_ as parameters. 
+# It returns _True_ if every word in sentence has a length greater than or equal to _x_.
+
+def x_length_words(sentence, x):
+  splited_sentence = sentence.split(" ")
+  for word in splited_sentence:
+    if (len(word) < x):
+      return False
+  return True
+
+
+# TESTS:
+print(x_length_words("i like apples", 2))
+# should print False
+print(x_length_words("he likes apples", 2))
+# should print True
